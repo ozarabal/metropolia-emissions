@@ -1,0 +1,17 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+
+# Install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy source
+COPY . .
+
+# Expose API port
+EXPOSE 8000
+
+# Start FastAPI with uvicorn
+# Workers=2 per container — docker-compose runs 2 replicas = 4 workers total
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "2"]

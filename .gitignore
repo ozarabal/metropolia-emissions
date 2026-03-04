@@ -1,0 +1,34 @@
+# Environment variables — NEVER commit these
+.env
+.env.local
+.env.production
+
+# Node / React
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker/postgres/data/
+
+# Credentials
+*.pem
+*.key
+service-account.json

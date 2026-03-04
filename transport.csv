@@ -1,0 +1,8 @@
+mode,sub_mode,fuel_code,distance_km,quantity,trip_date,origin,destination
+road,Passenger Car,GASOLINE,150.5,1,2026-03-01,Jakarta,Bandung
+rail,Commuter Train,GRID_ELECTRICITY,45,200,2026-03-02,Station A,Station B
+sea,Container Ship,HFO_LFO,800,500,2026-03-03,Tanjung Priok,Singapore
+air,Narrow-body,JET_FUEL,1200,150,2026-03-04,Soekarno-Hatta,Ngurah Rai
+road,Delivery Truck,DIESEL,300.75,5,2026-03-05,Surabaya,Malang
+road,Bus,B35,50,30,2026-03-06,Depok,Jakarta
+road,,,25,,,,
