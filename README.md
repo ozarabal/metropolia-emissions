@@ -11,9 +11,9 @@ The National Transport Authority of Metropolia previously calculated transport e
 
 This platform replaces that system with:
 
-- **Consistent emission calculations** using the workbook-defined formulas and internationally recognized emission factors (IPCC 2006, IMO GHG 2020, ICAO CORSIA v12, IEA 2023)
+- **Consistent emission calculations** using the workbook-defined formulas and internationally recognized emission factors
 - **Multi-source data ingestion** that handles variant column names, mixed units, and different file formats
-- **Web + Mobile access** via a single React PWA deployable on Azure Static Web Apps
+- **Web + Mobile access** via a single React PWA
 - **Scalable architecture** designed to grow from hundreds to millions of records
 
 ---
