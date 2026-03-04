@@ -19,23 +19,13 @@ This platform replaces that system with:
 ---
 
 Problem → Solution strip at the top — side by side, showing exactly what the old Excel/VBA approach failed at and what the platform fixes.
-4 actor swim lanes — each color-coded throughout the entire flow:
-
-🔵 Agency Data Officer — the person at road/rail/sea/aviation agencies who collects and uploads data
-🟢 NTA Analyst — reviews batches, runs QA, generates summaries in Streamlit
-🟡 Authority Director — reads the dashboard, exports MRV reports, makes policy decisions
-🟣 System (Automated) — the platform itself: normalizing columns, calculating, caching, persisting
-
-13 interactive steps across 5 phases:
 
 Data Collection → Upload → Auto-normalize
 Apply workbook formulas → Store in PostgreSQL → Redis cache
-QA review → Streamlit deep-dive
 National summary → Executive dashboard → MRV export
-BigQuery migration → Policy decisions
 
 Click any step node → the right panel shows full detail: description, inputs, outputs, known constraints, and the exact technologies behind it.
-System architecture grid below shows the 4 technical layers (React PWA → FastAPI → PostgreSQL+Redis → BigQuery+Streamlit).
+System architecture grid below shows the 4 technical layers (React PWA → FastAPI → PostgreSQL+Redis).
 
 ---
 
