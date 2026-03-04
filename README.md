@@ -198,9 +198,9 @@ Full interactive docs available at [http://localhost:8000/docs](http://localhost
 | Tool | How It Was Used |
 |------|----------------|
 | **Claude (Anthropic)** | Code generation (React app, emissions engine, Docker Compose, PWA manifest) |
-| **Manual verification** | All emission factors cross-checked against IPCC 2006, IMO GHG Study 2020, and ICAO CORSIA v12 primary sources |
+
 
 **Decisions made by the project team, not AI:**
 - React PWA over React Native (single codebase, faster delivery)
-- Exact calculation formulas taken from the recruiter-provided workbook, not assumed
+- Exact calculation formulas taken from the provided workbook, not assumed
 - Tech stack choices documented above with explicit reasoning
