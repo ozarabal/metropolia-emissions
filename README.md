@@ -123,9 +123,8 @@ This satisfies the **"Web App AND Mobile App"** requirement without needing Reac
 |--------|-------------|-------------|
 | < 100K records | Browser-side JS (current app) | < 5 sec |
 | 100K – 1M | FastAPI + PostgreSQL + Redis | < 30 sec |
-| 1M+ records | BigQuery + Dataflow streaming | Sub-second |
 
-The `docker/docker-compose.yml` defines the full 6-service production stack. The `docker/bigquery_schema.sql` defines the partitioned + clustered data warehouse schema with pre-aggregated views.
+The `docker/docker-compose.yml` defines the full 6-service production stack.
 
 ---
 
@@ -135,7 +134,7 @@ As required by the assignment instructions, all AI tool usage is documented tran
 
 | Tool | How It Was Used |
 |------|----------------|
-| **Claude (Anthropic)** | Code generation (React app, emissions engine, Docker Compose, BigQuery schema, GitHub Actions, PWA manifest), methodology document, README, project planning |
+| **Claude (Anthropic)** | Code generation (React app, emissions engine, Docker Compose, PWA manifest)|
 | **Manual verification** | All emission factors cross-checked against IPCC 2006, IMO GHG Study 2020, and ICAO CORSIA v12 primary sources before use |
 
 **Decisions made by the project team, not AI:**
