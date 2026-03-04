@@ -105,7 +105,7 @@ docker compose up --build
 | Service | URL |
 |---------|-----|
 | Frontend (React PWA) | [http://localhost:3000](http://localhost:3000) |
-| API (FastAPI + Swagger docs) | [http://localhost:8000/docs](http://localhost:8000/docs) |
+| API (FastAPI + Swagger docs) | [http://localhost:8080/docs](http://localhost:8080/docs) |
 | PostgreSQL | `localhost:5434` |
 | Redis | `localhost:6377` |
 
@@ -115,7 +115,7 @@ If you prefer to run the FastAPI server directly (requires PostgreSQL and Redis 
 
 ```bash
 cd backend
-uvicorn main:app --reload --port 8000
+uvicorn main:app --reload --port 8080
 ```
 
 ---
@@ -180,7 +180,7 @@ Docker Compose starts all services (API, PostgreSQL, Redis) with a single `docke
 
 ## API Reference
 
-Full interactive docs available at [http://localhost:8000/docs](http://localhost:8000/docs) when the backend is running.
+Full interactive docs available at [http://localhost:8000/docs](http://localhost:8080/docs) when the backend is running.
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
